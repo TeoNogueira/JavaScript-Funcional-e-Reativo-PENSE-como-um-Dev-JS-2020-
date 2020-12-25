@@ -1,4 +1,4 @@
-
+/*
 function exec(fn, a, b) {
  
     return fn(a, b)
@@ -42,4 +42,38 @@ return nomeSobrenome(a, b)
 const conca = (a, b) => console.log(a + b)
 
 
-fff(conca, "Teófilo ", "Nogueira")
+fff(conca, "Teófilo ", "Nogueira")*/
+
+
+
+function exec(fn, a, b) {
+
+
+    return fn(a, b)
+}
+
+const somarNoTerminal = (x, y) => console.log(x + y)
+
+const subTerminal = (x, y) => console.log(x - y)
+exec(somarNoTerminal, 56, 38)
+
+exec(subTerminal, 190, 50)
+
+
+function blog(a, b) {
+
+    
+    return a - b
+
+
+}
+
+console.log(blog(50, 20))
+
+// pra setInterval vem primeiro uma funçao depois a quantidade de tempo(seconds, etcs...m)
+const fn = () => console.log('Exec....')
+setInterval(fn, 1000)
+
+//setTimeout(fn, 1000)
+
+

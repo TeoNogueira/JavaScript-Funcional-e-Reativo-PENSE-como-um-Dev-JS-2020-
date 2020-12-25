@@ -30,7 +30,7 @@ console.log(soma(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
 console.log(soma(1, 2, 3, 4, 5, 6, ))
 console.log(soma(1, 2, 3, 4))
 */
-
+/*
 const potencia = (base) => {
     return exp => {
     return Math.pow(base, exp)
@@ -42,6 +42,8 @@ const potencia = (base) => {
 
 
 // this
+
+// importancia do entendimento da sintaxe enxuta
 
 
 Array.prototype.ultimo = function() {
@@ -59,3 +61,19 @@ const numeros = [1, 2, 3, 500]
 numeros.ultimo()
 
 numeros.primeiro()
+
+
+
+*/
+
+
+
+ Array.prototype.log = function() {
+
+
+    console.log(this) //this para mostrar um array na console
+ }
+const numeros = [1, 2, 3]
+
+numeros.log()
+
