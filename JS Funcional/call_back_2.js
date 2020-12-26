@@ -1,3 +1,4 @@
+/*
 const fs = require('fs')
 const path = require('path')
 
@@ -26,6 +27,82 @@ console.log('inicio...')
 const conteudo = fs.readFileSync(caminho) // importante lembrar esse conceito de readFileSync que é executado
 // após o código anterior
 console.log(conteudo.toString())
-console.log('Fim....')
+console.log('Fim....') */
+
+/*
+
+
+const fs = require('fs')
+
+const path = require('path')
+
+const caminho = path.join(__dirname, 'blog.txt')
+
+
+
+function liberar(_, conteudo) {
+
+ console.log(conteudo.toString())
+
+}
+
+
+fs.readFile(caminho, {}, liberar)*/
+
+
+/*
+
+
+const fs = require('fs')
+const path = require('path')
+
+
+const caminho = path.join(__dirname, 'blog.txt')
+const beleza = path.join(__dirname, 'dados.txt')
+
+
+function liberar(err, conteudo) {
+
+console.log(conteudo.toString())
+
+}
+
+// fs.readFile(caminho, {}, liberar)
+
+fs.readFile(beleza, {}, liberar)
+
+
+fs.readFile(caminho, {}, (_, conteudo) => console.log(conteudo.toString()))
+
+
+// 
+
+console.log('inicio...')
+const conteudo = fs.readFileSync(caminho) // importante lembrar esse conceito de readFileSync que é executado
+// após o código anterior
+console.log(conteudo.toString())
+console.log('Fim....') */
+
+
+const fs = require('fs')
+const path = require('path')
+
+const walk = path.join(__dirname, 'dados.txt')
+const caminho = path.join(__dirname, 'blog.txt')
+
+function liberar(_, conteudo) {
+
+console.log(conteudo.toString())
+
+
+}
+
+fs.readFile(walk, {}, liberar)
+
+
+fs.readFile(caminho, {}, (_, conteudo) => console.log(conteudo.toString()))
+
+
+
 
 
