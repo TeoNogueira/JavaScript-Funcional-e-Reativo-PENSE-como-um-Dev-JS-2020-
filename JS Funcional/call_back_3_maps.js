@@ -30,6 +30,8 @@ console.log(clansTop10.map(buscarPesLetra))
 
 */
 
+/*
+
 const listaCoisas = [
  
 {  
@@ -66,3 +68,55 @@ const totais = listaCoisas.map(getTotal)
 
 
 console.log(totais)
+
+// --- -- ----
+*/
+
+
+const objEmArrays = [{
+casaTamanho: 'Grande', cor: 'Verde', quartos: 10, banheiros: 5, piscina: true
+
+}, {casaTamanho: 'Pequeno', cor: 'Cinza', quartos: 3, banheiros: 1
+}, {casaTamanho: 'Médio', cor: 'Branco', quartos: 6, banheiros: 3}, {
+
+    casaTamanho: 'Mansão', cor: 'Cinza', quartos: 15, banheiros: 8, piscina: true
+}
+
+]
+
+/*
+const pega = item => item.quartos +  item.banheiros
+
+const totais = pega
+
+console.log(objEmArrays.map(totais))
+
+
+*/
+
+Array.prototype.meuMap = function(fn) {
+   const novoArray = []
+    
+
+      for( let i = 0; i < this.length; i ++) {
+
+    
+        const resultado = fn(this[i], i, this)
+        novoArray.push(` Resultado: ${resultado}`)
+  
+
+      
+      //--x----
+      //for(let el of this) {
+
+       // fn(el)
+      }
+      return novoArray
+   }
+
+
+ const pega = item => item.quartos +  item.banheiros
+
+const totais = pega
+
+console.log(objEmArrays.meuMap(totais))
