@@ -72,8 +72,12 @@ console.log(blog(50, 20))
 
 // pra setInterval vem primeiro uma funçao depois a quantidade de tempo(seconds, etcs...m)
 const fn = () => console.log('Exec....')
-setInterval(fn, 1000)
+setInterval(fn, 5000)
 
-//setTimeout(fn, 1000)
+
+
+
+
+//setTimeout(fn, 5000 ) 5 segundos
 
 
