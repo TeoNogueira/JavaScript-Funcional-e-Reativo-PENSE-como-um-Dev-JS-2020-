@@ -1,6 +1,4 @@
-exibindo dentro do txt 
+agora iremos trabalhar callbacks, lembrando dos sinais matemáticos de nossas lições de programação
 
-linha 2
 
-linha 4
-linha 5
+nunca esqueça os códigos feitos na mão
