@@ -97,7 +97,8 @@ console.log(conteudo.toString())
 
 }
 
-fs.readFile(walk, {}, liberar)
+
+fs.readFile(walk, {}, liberar) // LER O ARQUIVO (DIFERENTE DE MOSTRAR COMO A console.log()
 
 
 fs.readFile(caminho, {}, (_, conteudo) => console.log(conteudo.toString()))
