@@ -91,14 +91,29 @@ ApenasTresDados(Clan)
     
     }
 
-    const { NomeClan, Level, Marechal, Nation, OrderToMarechal:{TitleQuantity, Wars, Honor, Aliance}} = ClanTwo
 
 
-    function algo({NomeClan, Marechal, Nation, OrderToMarechal:{Aliance, Wars}}) {
+    function algo({ Marechal, Nation, OrderToMarechal:{Aliance, Wars}}) {
 
 
-       console.log({NomeClan, Marechal, Nation, OrderToMarechal:{Aliance, Wars}})
+        console.log({ Marechal, Nation, OrderToMarechal:{Aliance, Wars}})
 
+     
     }
 
     algo(ClanTwo)
+
+
+
+
+    function JustName({NomeClan}) {
+
+
+        console.log({NomeClan})
+    
+    
+    }
+
+
+ 
+    JustName(ClanTwo)
