@@ -12,6 +12,8 @@ function tocar () {
     console.log(`Estamos tocando ${this.artista}!`)
 }
 
+
+
 const toque = tocar.bind(bar)
 const tocou = tocar.bind(show)
 
@@ -19,3 +21,17 @@ const tocou = tocar.bind(show)
 tocou()
 toque()
 console.log(artista)
+
+
+
+function allow() {
+
+console.log(`Estamos ouvindo ${this.artista}`)
+}
+
+const vem = allow.bind(bar)
+
+
+vem()
+
+
