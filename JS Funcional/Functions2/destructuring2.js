@@ -21,3 +21,20 @@ vamos(LembroDeTudo)
 
 
 
+
+const estrutura = {
+
+OK: 'Okay',
+nada: 'Nada',
+valeu: true
+
+
+}
+
+function recebera({OK, valeu}) {
+
+
+    console.log({OK, valeu})
+}
+
+recebera(estrutura)
