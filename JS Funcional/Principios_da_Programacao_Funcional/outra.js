@@ -1,23 +1,22 @@
-function addRest(fn, ...calc) {
+function addFnRest(fn, ...rest) {
 
-return function add(texto) {
+return function add(text) {
 
-
-return `${fn(...calc)}`
-
-}
+return fn(...rest)
 
 }
 
+}
 
-function somar(a, b) {
 
-return a + b
+function totalCalc(a, b, c, d, e, f) {
+
+return a + b + c - d + e * f
 
 }
 
-const response = addRest(somar, 50, 150)('')
 
+const r1 = addFnRest(totalCalc, 50, 100, 120, 220, 500, 555 )('');
 
-
-console.log(response)
+const nomeSaldo =   `Olá esse é o seu saldo atual: ${r1}` 
+console.log(nomeSaldo)
