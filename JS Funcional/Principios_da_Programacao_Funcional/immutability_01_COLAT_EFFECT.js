@@ -7,6 +7,7 @@ return [...array].sort((a, b) =>  a + b) //[...array] função pura gerando clon
 }
 
 
+
 // Object.freeze()
 
 const nums = [3, 1, 7, 9, 4, 6]
