@@ -39,14 +39,15 @@ const exagerado = composicao(
     tornarLento
     ) 
 
-    const CoralKemuel = composicao(
+    const testFunc = composicao(
         gritar,
        tornarLento
         ) 
     
 
     
-console.log(exagerado('Acabe com eles Valor!'), CoralKemuel('Wheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeu'))
-console.log(exagerado('Wheeeeu!'))
+console.log(exagerado('Acabe com eles Valor!'), testFunc('Wheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeu'))
 
+console.log(exagerado(enfatizar(('Wheeeeu'))))
 
+console.log(testFunc(tornarLento(`aaaaaah ${exagerado(enfatizar(''))}`)))

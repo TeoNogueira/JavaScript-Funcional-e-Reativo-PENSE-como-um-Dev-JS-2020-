@@ -8,7 +8,6 @@ const carrinho = [
     
     {camisa: 'Billabong', cor: 'branco/estampado', preco: 600, tamanho: 'M'}
 
-
 ]
 
 //-----x-------//

@@ -48,7 +48,7 @@ async function retornarValorRapido() {
 async function executar() {
     
     let valor =  await retornarValorRapido()
-   await esperarPor(1500) //quando insiro o await ele executa primeiro e depois respeita o tempo do próximo await// podemos afirmar também como uma espécia de pausa.
+   await esperarPor(1500) //quando insiro o await ele executa primeiro e depois respeita o tempo do próximo await// podemos afirmar também como uma espécie de pausa.
    //--- x ---//
    // por trás de uma async/await deve existir uma promise
 console.log(`Async/await... ${valor}`)
