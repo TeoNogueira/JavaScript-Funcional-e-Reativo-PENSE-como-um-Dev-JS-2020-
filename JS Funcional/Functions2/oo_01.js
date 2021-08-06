@@ -17,7 +17,7 @@ this.precoFinal = function () {
 
 
 const p1 = new Produto('Caneta', 8.59) 
-console.log(p1.nome)
+console.log(p1.preco + p1.desc)
 const p2 = new Produto('Caneta', 2345.98)
 console.log(p2.preco)
 console.log(p2.privado)
