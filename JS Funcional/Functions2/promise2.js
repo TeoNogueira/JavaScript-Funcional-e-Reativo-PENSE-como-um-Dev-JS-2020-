@@ -48,14 +48,16 @@ dados
 let addPromise = new Promise(function(a) {
 
 
-    a([{camisa: 'Nike', tamanho: 'G', cor: 'cinza/branco/preto', origin: 'China'}])
+    a([{camisa: 'Nike', tamanho: 'G', cor: 'cinza/branco/preto', origin: 'China', }])
 })
 
 console.log(typeof a)
 
 
 
-addPromise.then(valor => console.log(valor))
+addPromise
+.then(valor => console.log(valor))
+
 
 
 // --- 

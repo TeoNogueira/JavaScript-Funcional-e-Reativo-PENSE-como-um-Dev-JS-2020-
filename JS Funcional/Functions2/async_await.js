@@ -62,13 +62,13 @@ return valor + 3
 }
 
 //node não suporta chamar o await dentro de um módulo dele
-// quando saio do mundo de assincronismo e entro no sícrono tenho que usar o: .then
+// quando saio do mundo de assincronismo e entro no síncrono tenho que usar o: .then
 // Quando existe async/await ... não preciso usar o .then
 
 async function executarDeVerdade() {
 
-   const valor =  await executar()
-   console.log(valor)
+  const valor =  await executar()
+  console.log(valor)
 
 
 }
