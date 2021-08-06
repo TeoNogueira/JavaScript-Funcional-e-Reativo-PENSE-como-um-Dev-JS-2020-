@@ -1,1 +1,1 @@
-addCalcMaxmimumAndX
+console.log(mostrarTudo)
