@@ -8,7 +8,6 @@ spaces: 5,
 }
 
 
-
 booksBox.addBooks = (quantityBooks) => {
 
     const { booksIn, spaces} = booksBox
@@ -24,3 +23,9 @@ if( booksIn > spaces) {
 return booksBox.booksIn
 
 }
+
+
+console.log(booksBox.addBooks(4))
+
+
+
