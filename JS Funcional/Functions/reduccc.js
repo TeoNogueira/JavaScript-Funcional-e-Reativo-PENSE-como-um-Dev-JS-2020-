@@ -19,16 +19,11 @@ const pist = [
 
 ]
     
-    
-function soma(a, b,) {
-
+function soma(a, b) {
 
 return a + '\n' + b 
-
     
 }
-
-
 
 
 const pegandoPist = pist.reduce((acc, {nome}) => `${acc} - ${nome}\n`, '')

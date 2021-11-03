@@ -18,7 +18,7 @@ const fill = cart.filter(item => item.price < 120).reduce((acc, item) =>
 const destructName = cart.reduce((acc, { nome } ) => `${acc} - ${nome}\n`, '')
 
 
-const thanks = `Obrigado pela Aula!`
+const thanks = ` - - Obrigado pela Aula! - -\n`
 
 const term = destructName + `\n ${thanks}`
 
