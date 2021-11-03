@@ -1,3 +1,1 @@
-
-
-declara()
+destructName = `\n${thanks}`
