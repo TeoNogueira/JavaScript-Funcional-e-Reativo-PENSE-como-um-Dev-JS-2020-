@@ -4,16 +4,16 @@ const ingredients = ['frango', 'tomate', 'cebola', 'cogumelo'];
 
 const cookiesIngredients = ingredients.reduce((acc, item, index, array) => {
 
-const correctWordGender =  /a$/.test(item) ? 'cozida' : 'cozido'
+const correctWordGender = /a$/.test(item) ? 'cozida' : 'cozido'
+
+ /*regex + if Ternary*/ 
 // item[item.length -1] ===       <<<<< o que funciona por trás de uma regex
-    if(index === array.length -1) {
 
-        // console.log(`Ultimo item: ${item}`);
-        return acc + `${item} ${correctWordGender} `
+const isLastItem = index === array.length -1
 
-    }
-    
-    return acc +` ${item} ${correctWordGender}, `
+const ingredientMessage =   acc + `${item} ${correctWordGender}`
+
+return isLastItem ? `${ingredientMessage}.`: `${ingredientMessage}, `
 
 
 }, '');
