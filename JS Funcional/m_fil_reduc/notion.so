@@ -1,0 +1,5 @@
+O que é aprendemos com o reduce:
+
+1 - criar uma lista trazendo de um array de objetos todos os nomes;
+2 - verificar quantidades de determinado valor dentro do objeto e informar quantos existem;
+3 - inserir algo no final de uma lista de array ou começo dela com o uso dos parametros index e array dentro do reduce + regex usado para verificar se o ultimo digito é verdadeiro ou falso.

@@ -27,6 +27,11 @@ const quantityOpenOrClosed = ifoodStores.reduce((acc, {open}) => {
     
     }, {});
 
-console.log(quantityOpenOrClosed)
+const messageOpenOrClosed = `Quantidade abertos e fechados: `
 
-console.log(mappingTrueOrFalse)
+
+console.log(messageOpenOrClosed, quantityOpenOrClosed)
+
+console.log(mappingTrueOrFalse);
+
+
