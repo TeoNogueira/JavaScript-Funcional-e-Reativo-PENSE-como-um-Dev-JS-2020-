@@ -4,8 +4,8 @@
 let ifoodStores = [
 
     {store: 'Habbibs', open: false },
-    {store: 'McDonalds', open: false },
-    {store: 'Giraffas', open: false },
+    {store: 'McDonalds', open: true },
+    {store: 'Giraffas', open: true },
     {store: 'Faaca', open: true },
     {store: 'Zen', open: true },
     {store: 'BurguerKing', open: true },
@@ -74,13 +74,40 @@ function restaurantsAndRodies(a, b) {
     }
     
 
-const resultAll = restaurantsAndRodies(restaurant(), rod())
+const resultAllFoodsOpen = restaurantsAndRodies(restaurant(), rod())
 
 
-console.log(resultAll);
+console.log(resultAllFoodsOpen);
 
 
 
+function consultRestaurantsList() {
+
+
+
+    const consultListRestaurants = ifoodStores.filter(item => item.open === false).reduce((acc, {store}) => `${acc} - ${store}\n`, 'Restaurantes:\n\n')
+
+    console.log(consultListRestaurants)
+
+
+}
+
+
+
+function consultRodiziosList() {
+
+
+const consultListRodizios = rodizio.filter(item => item.open === false).reduce((acc, {store}) => `${acc} - ${store}\n`, 'Rodizios:\n\n')
+
+console.log(consultListRodizios);
+
+}
+
+
+const resultAllRestaurants = restaurantsAndRodies(consultRestaurantsList(), consultRodiziosList());
+
+
+console.log(resultAllRestaurants);
 
 
 
