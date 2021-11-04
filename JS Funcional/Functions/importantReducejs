@@ -31,7 +31,6 @@ function restaurant()
  }   
 
 
-
 let rodizio = [
 
     {store: 'PizzaAtlant', open: false },
@@ -63,7 +62,6 @@ console.log(mapRodizio)
 }
 
 
-
 function restaurantsAndRodies(a, b) {
 
 
@@ -81,17 +79,18 @@ console.log(resultAllFoodsOpen);
 
 
 
+//Trazer Lista de todos e filtrar quais estão fechados ou abertos
+
 function consultRestaurantsList() {
 
 
 
     const consultListRestaurants = ifoodStores.filter(item => item.open === false).reduce((acc, {store}) => `${acc} - ${store}\n`, 'Restaurantes:\n\n')
 
-    console.log(consultListRestaurants)
+    console.log(consultListRestaurants);
 
 
 }
-
 
 
 function consultRodiziosList() {
