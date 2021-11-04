@@ -1,6 +1,6 @@
 
 
-const materials = ['caneta', 'lapiseira', 'caderno', 'lapis', 'hidrocor']
+const materials = ['caneta', 'lapiseira', 'caderno', 'lapis', 'hidrocor', 'bolsa']
 
 
 
@@ -18,9 +18,7 @@ if(index === array.length -1) {
 }
 
 
-
 return acc + `${firstVogal} ${item} ${goodOrNot}, `
-
 
 
 },'')
