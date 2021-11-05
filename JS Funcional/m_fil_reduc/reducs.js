@@ -31,9 +31,9 @@ const cart = [
 
 
 
-    const obtendoResultado = cart.reduce((acc, { nome }) => `${acc} - ${nome}\n`, '');
-// 
-    console.log(obtendoResultado);
+//     const obtendoResultado = cart.reduce((acc, { nome }) => `${acc} - ${nome}\n`, '');
+// // 
+//     console.log(obtendoResultado);
 
 
     const obtendoQuantidadeDePrecos = cart.reduce((acc, { price }) => {
@@ -48,3 +48,10 @@ return acc
 
 
      console.log(obtendoQuantidadeDePrecos)
+
+
+
+    //  const result = cart.filter(item => item.price > 95).reduce((acc, item) => acc + item.price, 0);
+
+
+    //  console.log(result)
