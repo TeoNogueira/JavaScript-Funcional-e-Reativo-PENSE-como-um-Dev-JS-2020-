@@ -67,4 +67,5 @@ const readStore = ifoodStores.filter(item => item.open === true).reduce((acc, {s
 
 
 
+
 console.log(readStore)
