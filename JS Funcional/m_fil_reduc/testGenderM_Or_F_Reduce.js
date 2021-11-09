@@ -32,8 +32,8 @@ let sucosInMarket2 = ['Jaca', 'mamão', 'limão', 'pitanga', 'melão', 'sapoti',
 // console.log(listResult);
 
 
-// const compareMercados = sucosInMarket1.filter((coisasSemelhantes) => sucosInMarket2.includes(coisasSemelhantes));
+const compareMercados = sucosInMarket1.filter((coisasSemelhantes) => sucosInMarket2.includes(coisasSemelhantes));
 
 
-// console.log(compareMercados);
+console.log(compareMercados);
 

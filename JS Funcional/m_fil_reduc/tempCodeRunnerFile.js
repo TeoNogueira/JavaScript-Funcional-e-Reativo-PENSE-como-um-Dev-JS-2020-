@@ -1,1 +1,1 @@
-sexo
+paramForItem
