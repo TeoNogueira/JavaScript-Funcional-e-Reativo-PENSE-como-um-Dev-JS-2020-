@@ -16,6 +16,43 @@ const arr = [
 ];
 
 
+const roraimaForbiddenSeventeen = arr.filter(item => item.age < 18).reduce((acc, {nome}) => `${acc} - ${nome}\n`, 'Roraima menores de 18:\n\n')
+
+
+
+console.log(roraimaForbiddenSeventeen)
+
+
+
+
+// GENERATE ALL IN FUNCTION
+
+
+function resultFinal(arrayObjInConst, key ) {
+
+    return arrayObjInConst.reduce((acc, item) => {
+
+            if(!acc[item[key]]) {
+
+                acc[item[key]] = []
+            };
+
+                acc[item[key]].push(item);
+
+            return acc 
+
+    }, {});
+
+};
+
+const generateFunc = resultFinal(arr, 'sexo')
+
+
+console.log(generateFunc)
+
+
+
+
 
 // const resultFilter = arr.filter(item => item.Estado === 'Roraima').reduce((acc, { nome } ) => `${acc} - ${nome}\n`, 'Lista:\n')
 
@@ -35,26 +72,26 @@ const arr = [
 
 
 
-function resultData(firstParam, key) {
+// function resultData(firstParam, key) {
 
 
-return firstParam.reduce((acc, item) => {
+// return firstParam.reduce((acc, item) => {
 
-    if(!acc[item[key]]) {
+//     if(!acc[item[key]]) {
     
-        acc[item[key]] = []
+//         acc[item[key]] = []
     
-    };
+//     };
     
-    acc[item[key]].push(item)
+//     acc[item[key]].push(item)
     
-    return acc
+//     return acc
     
-    }, {});
+//     }, {});
     
-};
+// };
 
 
-const result = resultData(arr, 'Estado');
+// const result = resultData(arr, 'Estado');
 
-    console.log(result)
+//     console.log(result);
