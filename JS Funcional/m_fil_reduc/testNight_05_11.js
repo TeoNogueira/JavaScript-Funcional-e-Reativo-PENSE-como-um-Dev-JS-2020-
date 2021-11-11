@@ -24,7 +24,6 @@ console.log(roraimaForbiddenSeventeen)
 
 
 
-
 // GENERATE ALL IN FUNCTION
 
 
@@ -49,8 +48,6 @@ const generateFunc = resultFinal(arr, 'sexo')
 
 
 console.log(generateFunc)
-
-
 
 
 
