@@ -31,7 +31,6 @@ console.log(createWords)
 
 
 
-
 // filtrando os que separecem, menos o sapoti
 
 
@@ -42,7 +41,6 @@ console.log(compare)
 
 
 // const arr = [
-
 
 //     {nome: 'Fernando', age: 19, sexo: 'M', estado: 'Pernambuco'},
 //     {nome: 'Teo', age: 31, sexo: 'M', estado: 'Alagoas'},

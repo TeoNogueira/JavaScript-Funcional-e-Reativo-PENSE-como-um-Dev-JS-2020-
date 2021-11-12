@@ -1,1 +1,2 @@
-item
+
+  console.log(simpleFastList);
