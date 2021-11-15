@@ -11,17 +11,31 @@ let ifoodStores = [
 ];
 
 
-const openForced = ifoodStores.filter(item => {      
+
+
+const allOpen = ifoodStores.reduce((acc, {open}) => {
+
+acc[open] = acc[open] + 1 || 1
+
+return acc
+
+}, {});
+
+
+console.log(allOpen)
+
+
+// const openForced = ifoodStores.filter(item => {      
        
-    ifoodStores[0].open = true
+//     ifoodStores[0].open = true
     
-    return item.open
+//     return item.open
 
-      })
-     .reduce((acc, {store}) =>
-      `${acc} - ${store}\n`, 'Restaurantes agora abertos:\n\n');
+//       })
+//      .reduce((acc, {store}) =>
+//       `${acc} - ${store}\n`, 'Restaurantes agora abertos:\n\n');
 
-console.log(openForced)
+// console.log(openForced)
 
 
 let rodizio = [
@@ -39,4 +53,5 @@ let rodizio = [
 
 const trueFilter = rodizio.filter(item => item.open === true).reduce((acc, {store}) => acc + `- ${store}\n`, 'Restaurantes abertos:\n\n');
 
-console.log(trueFilter)
+// console.log(trueFilter);
+

@@ -1,1 +1,1 @@
-modify()
+console.log(allOpen)
