@@ -23,22 +23,32 @@ const firstList = [
     { title: 'A Vida Invisível', directedBy: 'Chris Columbus' }
   ];
 
+  
+  
+const supportList = secondList.reduce((acc, {title}) => `${acc} - ${title}\n`, 'Title List Name secondList:\n\n')
+
+
+console.log(supportList)
+
 
     // COMPARAÇÃO SOMENTE NO ARRAY
 
+    
   const listResult = firstList.filter((item) => {
       
-   const modify = () => {
-       
-const implicite = firstList[2].title = 'Okay'
-    return implicite
-    
-   }
+        const modify = () => {
+         
+        const implicite = firstList[2].title = 'Okay'
+      
+        return implicite
+        
+
+        };
+
         modify()
+   
+        return item
+      
+})
 
-    return item
-  
-});
-
-
-console.log(listResult)
+// console.log(listResult)
